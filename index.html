@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>生鲜商笔促产计划 · 双十一</title><style>
+:root{--red:#ff2442;--red-soft:#fff1f3;--ink:#1f2329;--sub:#6b7280;--line:#eceef2;--bg:#f6f7f9;--card:#fff;--yellow:#fff8e1;--yellow-line:#f1d98a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
+.hero{background:linear-gradient(135deg,#ff2442 0%,#ff6a5c 100%);color:#fff;padding:44px 20px 52px;text-align:center}
+.hero h1{font-size:30px;letter-spacing:1px}
+.hero p{opacity:.92;margin-top:8px;font-size:15px}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;justify-content:center;gap:6px;padding:10px 12px;flex-wrap:wrap}
+nav a{padding:6px 16px;border-radius:999px;color:var(--ink);text-decoration:none;font-size:14px;font-weight:500}
+nav a:hover,nav a.on{background:var(--red);color:#fff}
+main{max-width:1040px;margin:0 auto;padding:0 16px 60px}
+section{margin-top:44px}
+.sec-no{display:inline-block;background:var(--red-soft);color:var(--red);font-weight:700;padding:2px 12px;border-radius:6px;font-size:13px;margin-bottom:8px}
+h2{font-size:24px;margin-bottom:6px}
+.lead{color:var(--sub);font-size:14px;margin-bottom:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+.hl{background:var(--yellow);border:1px solid var(--yellow-line);border-radius:12px;padding:16px 20px;font-weight:600;display:flex;gap:12px;align-items:flex-start;margin:14px 0 22px}
+.hl .ic{font-size:24px}
+.hl p+p{margin-top:8px}
+table{border-collapse:collapse;width:100%;max-width:760px;font-size:15px}
+th,td{border:1px solid var(--line);padding:11px 14px;text-align:left}
+th{background:#f3f4f6}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tab{border:1px solid var(--line);background:#fff;border-radius:12px;padding:10px 22px;font-size:16px;font-weight:600;cursor:pointer;color:var(--ink)}
+.tab.on{background:var(--red);border-color:var(--red);color:#fff}
+.subtabs{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.subtab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 16px;font-size:14px;cursor:pointer}
+.subtab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.logic{background:var(--red-soft);border-left:4px solid var(--red);border-radius:8px;padding:12px 16px;font-size:14px;margin-bottom:16px}
+.topic h3{font-size:18px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.topic h3 i{font-style:normal;font-size:12px;font-weight:500;color:var(--red);background:var(--red-soft);padding:2px 10px;border-radius:999px}
+.topic .n{background:var(--red);color:#fff;width:26px;height:26px;border-radius:8px;display:inline-flex;align-items:center;justify-content:center;font-size:14px}
+.row{display:flex;gap:14px;padding:10px 0;border-top:1px dashed var(--line);font-size:14.5px}
+.row:first-of-type{margin-top:10px}
+.row b{flex:0 0 76px;color:var(--red)}
+.extras{background:#fafafa;border:1px dashed #d9dce3;border-radius:12px;padding:6px 18px;margin-top:6px}
+.extras .row:first-child{border-top:none}
+.extras h4{margin-top:12px;font-size:14px;color:var(--sub)}
+.srch{display:grid;grid-template-columns:repeat(2,1fr);gap:0 28px}
+.srow{display:flex;align-items:center;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.srow .rk{width:24px;height:24px;border-radius:6px;background:#eef0f4;color:#667;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex:0 0 24px}
+.srow:nth-child(-n+3) .rk{background:var(--red);color:#fff}
+.srow .w{flex:0 0 170px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.srow .bar{flex:1;height:8px;background:#f0f1f4;border-radius:4px;overflow:hidden}
+.srow .bar span{display:block;height:100%;background:linear-gradient(90deg,#ff6a5c,#ff2442);border-radius:4px}
+.src{font-size:12.5px;color:var(--sub);margin-top:10px}
+.flow{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:10px 0}
+.flow span{background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 14px;font-weight:600;font-size:14px}
+.flow em{font-style:normal;color:var(--red)}
+.formula{background:var(--ink);color:#fff;border-radius:12px;padding:16px 20px;font-size:16px;line-height:2;margin:10px 0}
+.formula em{font-style:normal;color:#ffb3bd;font-size:13px}
+.pool{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.pool .p{border:1px solid var(--line);border-radius:12px;padding:14px 16px;background:#fff}
+.pool .p b{display:block;color:var(--red);margin-bottom:4px}
+.pool .p small{color:var(--sub);display:block;margin-bottom:6px}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cmp>div{border-radius:12px;padding:14px 18px}
+.bad{background:#f5f6f8}.good{background:var(--red-soft)}
+mark{background:#ffe58f;padding:0 3px;border-radius:3px}
+.tt-wrap{overflow-x:auto;margin-top:10px}.tt{max-width:none;width:100%;min-width:560px;table-layout:fixed;font-size:14px}.tt th:first-child{width:96px}.tt td{line-height:1.9;word-break:break-all}
+.imgs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:12px}
+.imgs.hot{display:block}.imgs.hot img{aspect-ratio:auto;object-fit:contain;width:100%;border:none;cursor:zoom-in}
+.imgs figure{margin:0;position:relative;cursor:zoom-in}
+.imgs img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px;border:1px solid var(--line);display:block;background:#f0f1f4}
+.imgs figcaption{font-size:12px;color:var(--sub);margin-top:4px;line-height:1.4}
+.imgs .bd{position:absolute;top:6px;left:6px;background:#4b5563;color:#fff;font-size:11px;padding:1px 8px;border-radius:999px}
+.imgs .gd{position:absolute;top:6px;left:6px;background:var(--red);color:#fff;font-size:11px;padding:1px 8px;border-radius:999px}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.82);display:none;align-items:center;justify-content:center;z-index:99;cursor:zoom-out}
+.lb img{max-height:92vh;max-width:92vw;border-radius:8px}
+.win{display:flex;gap:8px;margin:0 0 12px;flex-wrap:wrap}
+.win button{border:1px solid var(--line);background:#fafafa;border-radius:6px;padding:5px 12px;font-size:13px;cursor:pointer}
+.win button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.srow .t{flex:0 0 auto;font-size:11px;color:#8a94a6;background:#f3f4f6;border-radius:4px;padding:0 6px;max-width:96px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.more{display:block;margin:14px auto 0;border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 24px;font-size:13px;cursor:pointer}
+.doclink{display:inline-flex;align-items:center;gap:6px;margin-left:10px;padding:1px 10px;border-radius:6px;background:#fff;border:1px solid #f1d98a;color:#1d4ed8;font-weight:600;text-decoration:none;vertical-align:middle}
+.doclink:hover{background:#eef4ff;text-decoration:underline}
+footer{text-align:center;color:var(--sub);font-size:12.5px;padding:24px}
+@media(max-width:760px){.srch,.pool,.cmp{grid-template-columns:1fr}.hero h1{font-size:23px}.row{flex-direction:column;gap:2px}.row b{flex:none}}
+</style></head>
+<body>
+<header class="hero"><h1>「鲜品出圈」生鲜商笔促产计划</h1><p>双十一 · 海鲜水产 / 肉禽蛋 / 蔬菜 / 水果　选题方向 · 高搜词 · 推流逻辑</p></header>
+<nav id="nav"><a href="#s1">01 促产计划</a><a href="#s2">02 品类选题方向</a><a href="#s3">03 品类高搜词</a><a href="#s4">04 推流逻辑</a></nav>
+<main>
+
+<section id="s1"><span class="sec-no">01</span><h2>促产计划</h2><p class="lead">活动信息与通用规范</p>
+<div class="card">
+<p style="font-size:17px">活动时间：<b>10/18 - 11/11</b></p>
+<div class="hl"><span class="ic">📣</span><div><p>按对应选题方向发布符合规范的商笔，即可获得额外激励流量扶持：<mark>最高 5000 PV</mark></p><p>发布后一定要填写返稿表，才能领取流量<a class="doclink" href="https://doc.weixin.qq.com/sheet/e3_AdYAuAYhAJICNm5B0kGY9Q1iX7R02?scode=ANAAyQcbAAg7IDdDkwAdYAuAYhAJI&amp;tab=BB08J2" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" fill="#1aad19"/><path d="M3 9h18M3 15h18M9 3v18" stroke="#fff" stroke-width="1.6" fill="none"/></svg>生鲜商笔激励返稿表</a></p></div></div>
+<h3 style="margin-bottom:10px">笔记规范</h3>
+<table><tr><th>项目</th><th>要求</th></tr>
+<tr><td>图文单篇图片数量</td><td>≥5张</td></tr>
+<tr><td>视频单篇时长</td><td>40s-80s</td></tr>
+<tr><td>标题字数</td><td>16-19字（带场景或痛点）</td></tr>
+<tr><td>必带话题</td><td><b>#美食学科之神 #推给有品味的人 #1年1度购物狂欢 #小红书市集年度之作 #点击领券低至65折</b></td></tr></table>
+</div></section>
+
+<section id="s2"><span class="sec-no">02</span><h2>品类选题方向</h2><p class="lead">点击品类，查看对应的选题方向、标题 / 封面 / 文案打法与话题。</p>
+<div class="tabs" id="cat-tabs"></div><div id="cat-body"></div></section>
+
+<section id="s3"><span class="sec-no">03</span><h2>品类高搜词</h2><p class="lead">生鲜双十一高搜词 Top30（按品类线），热度条越长，搜索热度越高。可直接拿来做标题与话题。</p>
+<div class="tabs" id="s-tabs"></div><div class="win" id="s-win"></div><div class="card"><div class="imgs hot"><figure><img id="s-img" alt="高搜词榜单"></figure></div><p class="src">数据来源：生鲜行业双十一高搜词看板。热度条仅在同一品类、同一时间窗口内比较，不同品类、不同窗口之间不可直接比较；两个窗口天数不同（33天 / 31天），未折算日均。肉禽蛋线含火锅预制菜，火锅类词占据前列；蔬菜线含少量「蔬菜+肉」菜名。</p></div></section>
+
+<section id="s4"><span class="sec-no">04</span><h2>推流逻辑</h2>
+<p class="lead">一句话：推流量 = 封面点击率 + 点赞收藏评论的综合分，这个数值越高，系统推得越多。下面把这条链路拆开看每一步。</p>
+
+<div class="card"><h3>一、笔记从发布到被推荐，中间发生了什么</h3>
+<div class="flow"><span>笔记发布</span><em>→</em><span>收录</span><em>→</em><span>匹配兴趣用户</span><em>→</em><span>标签 / 分类</span><em>→</em><span>第一轮推荐</span></div>
+<p style="font-size:14px;color:var(--sub)">不合规的笔记会在收录环节被剔除。</p></div>
+
+<div class="card"><h3>二、系统怎么给互动打分</h3>
+<div class="formula">CES = 点赞数 <em>×1分</em> + 收藏数 <em>×1分</em> + 评论数 <em>×4分</em> + 转发数 <em>×4分</em> + 关注数 <em>×8分</em></div>
+<div class="cmp"><div class="good"><b>高得分</b><br>继续推荐，进入下一层流量池</div><div class="bad"><b>低得分</b><br>停止放量，笔记沉底</div></div>
+<p style="margin-top:12px;font-size:14.5px"><mark>评论、转发的权重是点赞收藏的 4 倍，引导关注更是 8 倍</mark>。所以正文末尾抛一个能接话的问题、引导「关注等补货」，比单纯求赞划算得多。</p></div>
+
+<div class="card"><h3>三、三级流量池：每一关看什么</h3>
+<div class="pool">
+<div class="p"><b>01 小流量池</b><small>看 封面点击率</small>笔记发出后先进一个几百到几千曝光的初始池。<mark>封面点击率是唯一的入场券</mark>——点得少就不再往下放量。</div>
+<div class="p"><b>02 中流量池</b><small>看 互动综合分</small>过了第一关，系统把点赞、收藏、评论、转发、关注加权成综合分（CES），分越高推得越多。</div>
+<div class="p"><b>03 商业加权</b><small>看 进店与转化</small>最后一层看进店和成交行为，同样的互动数据，能带来进店的笔记会被持续放量。</div></div>
+<div class="flow" style="margin-top:14px"><span>全部新发笔记</span><em>→</em><span>小流量池 · CTR</span><em>→</em><span>中流量池 · 互动分</span><em>→</em><span>商业加权 · 进店成交</span><em>→</em><span>持续放量</span></div>
+<p style="font-size:13px;color:var(--sub)">每一关不达标，都会停止放量。</p></div>
+
+<div class="card"><h3>四、封面点击率为什么至关重要</h3>
+<div class="cmp" style="margin-top:10px">
+<div class="bad"><b>曝光 1000 → 点击 10</b><br>封面点击率 1%：系统判定内容对用户没有吸引力，不再放量，笔记沉底。</div>
+<div class="good"><b>曝光 1000 → 点击 100</b><br>封面点击率 10%：系统判定内容值得被更多人看到，快速进入中流量池，曝光滚雪球式放大。</div></div>
+<p style="margin-top:12px;font-size:14.5px">同样的 1000 次曝光，<mark>点击率差 10 倍，结局完全相反</mark>。封面点击率是商笔最需要死磕的一个数。</p>
+<h3 style="margin-top:18px">优质笔记的核心：高点击</h3>
+<p style="font-size:14.5px">拆到最后只有两件事——<mark>好的封面</mark> + <mark>吸引人的标题</mark>，决定了 70% 的点击率，也决定了这条笔记能不能活下来。</p>
+<div class="cmp" style="margin-top:10px">
+<div class="good"><b>好的封面</b><br>主体大而清晰、色彩对比强、一眼能认出卖的是什么；避免多物平铺、暗光实拍、文字压主体。</div>
+<div class="good"><b>吸引人的标题</b><br>带品类/品种名方便被搜到，用情绪钩子和具体信息（规格、价格、做法）替代空泛形容词。</div></div>
+<div class="formula" style="margin-top:14px">推流量 = 封面点击率 × 互动综合分<br><em>两个数越高推得越多。封面不行，后面再好也没机会被看到——优化顺序永远是封面优先。</em></div></div>
+</section>
+</main>
+<footer>平台规则以官方最新公告为准。</footer>
+<script>
+const TOPICS={"海鲜水产": {"logic": "水产用户三大顾虑：值不值（价格）、干净不干净（成分与处理）、鲜不鲜（时令）。五个选题方向分别消除一种顾虑。", "groups": [{"name": "", "topics": [{"name": "价格反转式", "tag": "虾、鱼为主", "rows": [["标题", "带具体金额 +「够吃多久」：「以为X块没多少，结果够我吃一周/半个月」「X块承包一周减脂餐」；16-18字，数字放前半句"], ["封面", "囤货陈列（冰箱/冷冻抽屉分装）、整齐多盒+价格大字（「138元6盒」「100只左右」）、开箱+平台券角标"], ["文案", "情绪钩子（「一周的蛋白质需求，100元就妥妥搞定」）→ 卖点（无添加/无保水剂、处理干净无虾线、规格明确）→ 场景（上班忙的减脂人群，分装小杯冷藏）→ 收尾（一句话推荐+平台券/福利）"], ["话题", "虾仁推荐 / 无添加虾仁 / 蛋白质补充 / 上班族带饭 / 冰箱囤货 / 一人食吃什么 / 健康饮食"]], "imgs": [{"k": "104004dg326cl8b4346041bdh6g", "cap": "冰箱分装囤货", "bad": false}, {"k": "104004dg326cl82l346004259qo", "cap": "冷冻抽屉囤货", "bad": false}]}, {"name": "低卡成分透明式", "tag": "墨鱼丸、牛肉丸、鱼丸", "rows": [["标题", "把热量/含量数字写进标题：「一个热量23大卡」「含量93%」，并点明「不加什么」（无猪油/无牛油/无糖）"], ["封面", "成品切面/咬开特写（丸子内部纹理）、汤碗成品、搭配青菜的健康餐场景；画面干净，不堆文字"], ["文案", "开场直接说结论（传统牛肉丸约48大卡/个，改良后约23大卡）→ 卖点（含量数字、不加什么、淀粉含量≤1%）→ 场景（减脂期吃什么、高蛋白）→ 收尾（不做库存、新鲜日期发货）"], ["话题", "低脂墨鱼丸 / 低脂牛肉丸 / 减脂期吃什么 / 低脂低卡餐 / 高蛋白 / 吃不胖的肉"]], "imgs": [{"k": "104004dg326cl80ntl805tlffcg", "cap": "咬开的丸子+蔬菜，突出低脂质感", "bad": false}, {"k": "104004dg326cl8nsf4a0fn4erfs", "cap": "汤碗成品，家常餐场景", "bad": false}]}, {"name": "家人/粉丝共创式", "tag": "虾、贝、一人食新品", "rows": [["标题", "「和爸妈/粉丝商量后，推出XX」「应粉丝要求，终于出了XX」，后半句落到人群或规格（早八人、独居姐妹、一人食、小包装）"], ["封面", "成品场景图为主（汤碗、面、丸子），不强求大字；重点放在「新品/新规格」的实物"], ["文案", "故事线：听到粉丝呼声 → 老一辈不理解 → 做出来后惊喜 → 实测口感不输传统；卖点写清配方改了什么、规格怎么改、热量或含量数字；收尾强调「听大家的建议」"], ["话题", "品类词 + 一人食 / 减脂期 + 商家IP话题"]], "imgs": [{"k": "104004dg326cl8o0uk41ev56g0o", "cap": "冬瓜丸子汤，家常成品", "bad": false}, {"k": "104004dg326cl863o460aiaap0g", "cap": "鱼丸+虾+青菜，一人食场景", "bad": false}]}, {"name": "时令倒计时/预告式", "tag": "大闸蟹、梭子蟹、香辣蟹等蟹季当令品", "rows": [["标题", "「现在最好吃/一年就这一季」「要说再见了先囤满」「等了X天终于上架」：时间节点 + 情绪词"], ["封面", "文字大字报 + 囤货墙（「最后15天 26年再见」「谁等疯了？筹备1个月」），配到货实拍或博主手持"], ["文案", "开场拟人或倒计时 → 理由（为什么限时：天气、产量）→ 行动（立刻囤，备注加急）→ 预告款写「为什么迟迟不敢发」，首发宠粉福利"], ["话题", "大闸蟹 / 梭子蟹 + xx怎么吃 / xx自由 + 赛道热词（示例按当季品替换）"]], "imgs": [{"k": "104004dg326cl86ab4c07noiiv4", "cap": "到货实拍 一年只有2个月", "bad": false}, {"k": "104004dg326cl866vka005k53ls", "cap": "最后15天 26年再见", "bad": false}, {"k": "104004dg326cl8nkn460736bck4", "cap": "人物+「谁等疯了？筹备1个月」", "bad": false}, {"k": "104004dg326cl8nobk60f8kcsfg", "cap": "囤货墙（历史案例示意）", "bad": false}]}, {"name": "不完美自曝式", "tag": "大闸蟹残蟹，蟹季", "rows": [["标题", "「残」字当钩子 + 反差：「介意残蟹吗」「残公蟹能糊嘴了」「残蟹价买精品蟹」，可叠加价格（138一箱/100+一箱）"], ["封面", "手持掰开的蟹黄特写（流沙感）+ 一行大字（「母蟹已到达巅峰赏味期」「一年没几天能吃到」），蒸笼或深色背景衬托"], ["文案", "先自曝（掉爪/缺角不影响吃）再用「肥度、软糯糊嘴」反转 → 卖点（规格重量、满黄或糊嘴口感、价格、顺丰包邮）→ 收尾（空蟹/死蟹包赔，售后条款一句话说清）"], ["话题", "大闸蟹 / 残蟹 / 秋天吃蟹 / 大闸蟹自由"]], "imgs": [{"k": "104004dg326cl8nh3ka0al3kgt4", "cap": "手托掰开母蟹+「巅峰赏味期」", "bad": false}, {"k": "104004dg326cl80p4kc04q477g0", "cap": "深色背景半只蟹，蟹黄特写", "bad": false}, {"k": "104004dg326cl80ncka74oe3mjc", "cap": "蒸笼背景，蟹肉蟹黄近景", "bad": false}, {"k": "104004dg326cl80r746055ribi0", "cap": "双手捧大蟹+稀缺大字", "bad": false}]}]}]}, "肉禽蛋": {"logic": "肉类用户的核心顾虑是：贵不贵、吃了会不会胖、做起来麻烦不麻烦、囤着好不好放。四个选题方向分别对应这四种决策顾虑，双11 以囤货备餐和价格算账为主推。", "groups": [{"name": "", "topics": [{"name": "价格算账式", "tag": "", "rows": [["标题", "把价格拆成具体数字：「49.9十包」「9.9一包」「5斤29.9」「一片才13R」；或折算成吃多久：「146块吃半个月」「100多够吃半个月」"], ["封面", "生鲜食材展示：整块肉/切面特写，主色红，俯拍呈现肉质纹理，价格数字放大居于画面显眼处；成品图作为辅图"], ["文案", "开头先报价（「以为很贵，结果……」）→ 算账拆解（每片/每斤/每顿多少钱）→ 品质证据（原切不拼接、不注水，以商家实际为准）→ 物流售后（顺丰冷链、坏单包赔）→ 行动词「趁活动囤」"], ["话题", "平价 / 好物推荐 / 优惠券 / 双十一 / 肉食 / 牛肉自由"]], "imgs": [{"k": "meat-fresh-0", "cap": "「特价」+独立包装，肉质特写", "bad": false}, {"k": "meat-txt-1", "cap": "「99两斤送牛骨汤，冷链包邮」文字封面", "bad": false}, {"k": "meat-fresh-2", "cap": "多款肉品并排展示", "bad": false}]}, {"name": "减脂健身低卡式", "tag": "", "rows": [["标题", "把营养数据写进标题：「124大卡 25.2g蛋白」「低脂高蛋白」「减脂期大口吃肉」「吃瘦不饿瘦」；用「减脂餐一周」「15顿牛肉」等具体数字增强可信度"], ["封面", "成品美食制作：减脂餐盘、水煮/空气炸锅做法的成品俯拍，光线柔和自然，真实生活化；可加营养数据角标"], ["文案", "先说场景（减脂期/健身后想吃肉）→ 营养数据（热量、蛋白质，以商品详情页为准）→ 口感打破「健康餐难吃」（嫩而不柴、肉香足）→ 配料干净（不加牛油、无多余添加，需属实）→ 做法一句带过（空气炸锅/水煮）"], ["话题", "减脂 / 低热量 / 减脂餐 / 减肥餐 / 健身 / 低脂肪 / 轻食 / 鸡胸肉 / 碳水"]], "imgs": [{"k": "meat-txt-0", "cap": "「半个月减脂餐只花了我98」文字封面", "bad": false}, {"k": "meat-cp-3", "cap": "减脂餐盒分格摆放", "bad": false}, {"k": "meat-txt-2", "cap": "图文科普：抗炎饮食≠戒红肉", "bad": false}]}, {"name": "快手餐/一人食式", "tag": "", "rows": [["标题", "「打工人3分钟搞定」「下班几分钟就能煮好」「独立小包装免洗免切」「一人食一餐一包刚好」；突出「不用折腾」"], ["封面", "成品美食制作：盖饭、煮面、一锅焖等成品，多俯拍；一人份的小份量构图，传递家常满足感"], ["文案", "痛点开场（下班不想做饭/不爱吃饭）→ 省事卖点（免洗免切、水开烫几十秒、无需解冻、空气炸锅/煎锅都行）→ 一人食分量（100克一包刚好）→ 搭配吃法（米饭、煮面、凉拌）→ 收尾（懒人也能吃好）"], ["话题", "一人食 / 速食 / 煮面 / 空气炸锅 / 家常菜 / 厨房 / 晚餐 / 夜宵 / 外卖"]], "imgs": [{"k": "meat-cp-0", "cap": "多碗牛肉烫白菜成品俯拍", "bad": false}, {"k": "meat-cp-1", "cap": "牛肉饭+玉米，家常满足感", "bad": false}, {"k": "meat-cp-4", "cap": "一人份便当：牛排+配菜", "bad": false}]}, {"name": "囤货备餐式", "tag": "双11 主推", "rows": [["标题", "「双十一囤一个月的牛肉」「5斤分两次，够吃半个月」「冰箱必囤」「周末备一周的肉」；大促节点词 + 具体周期"], ["封面", "生鲜食材展示或冰箱收纳：塞满冰箱的整齐分装、多包陈列图，突出分量和整洁秩序感；可配「到手重量」实拍"], ["文案", "先说囤货理由（降温/大促/一次买够）→ 分量与价格（几斤、折合每顿多少）→ 储存方式（独立分装、真空锁鲜、冷冻保存，一餐一包不用整块解冻）→ 多种吃法（火锅涮煮、炖汤、煎烤）→ 物流售后（冷链发货、多退少补）→ 行动词「囤一份」"], ["话题", "双十一 / 囤货 / 冰箱必囤 / 火锅 / 炖汤 / 红烧 / 秋冬进补 / 备餐 / 冰袋"]], "imgs": [{"k": "meat-fridge-0", "cap": "冰箱整齐分装收纳", "bad": false}, {"k": "meat-fridge-1", "cap": "冰箱多包真空分装", "bad": false}, {"k": "meat-fridge-2", "cap": "收纳盒整齐码放", "bad": false}, {"k": "meat-fresh-1", "cap": "分装后肉片整齐码放", "bad": false}, {"k": "meat-fresh-4", "cap": "真空包装肉块特写", "bad": false}]}]}]}, "蔬菜": {"logic": "便宜量大 + 健康控体（低热量高饱腹），家庭囤货是主力场景，「低热量+撑人」是第一钩子。", "groups": [{"name": "", "covers": [{"k": "104004dg326cl84te460fnhlkpk", "cap": "番薯｜手持蒸红薯特写，粉糯起沙质感", "bad": false}, {"k": "104004dg326cl86024c00v6cu80", "cap": "南瓜｜切面微距展示粉糯「沙面」质感", "bad": false}, {"k": "104004dg326cl85quka053kh34g", "cap": "玉米｜人物手持商品+居家场景实拍", "bad": false}, {"k": "104004dg326cl85upk403eatue4", "cap": "番茄｜整箱开箱+咬开爆汁特写", "bad": false}, {"k": "104004dg326cl837k460ec9mks8", "cap": "番薯｜光线暗淡、质感干瘪，背景杂乱带水印", "bad": true}, {"k": "104004dg326cl80qn580ei9m3ls", "cap": "南瓜｜主体发暗、不切开展示果肉", "bad": true}, {"k": "104004dg326cl8oju5801fhh7hs", "cap": "玉米｜随手拍、无文字无特写", "bad": true}, {"k": "104004dg326cl8oos4c03et4igs", "cap": "番茄｜低清素材+画面杂乱", "bad": true}], "std": {"title": [["口感/品种推荐", "品种名 + 口感钩子：「干粉起沙、软糯无丝，自带板栗香」「生吃脆甜爆汁，蒸熟清甜回甘」「粉糯香甜的蛋黄贝贝」"], ["控体人群种草", "管理期/减脂/孕期/宝宝辅食：「一个能撑死人，但热量很低」「减脂期拿它当主食」「频繁吃西红柿的代价就是…越来越细」"], ["价格力表达", "「14r一箱生怕你们没听清」「不要低估8块钱的购买力」"], ["时令产季播报", "上市/巅峰期/下架倒计时：「唯一缺点：一年就吃二个月」「建议10月多吃，太糯啦！」「白月光水果玉米回归」「最后一批板栗小南瓜」"], ["农户直发·产地信任", "「自家种的不想卖给二道贩子」「请全国放心吃，我家不打药的」（须属实）「不要油费给地址就发」"], ["通用技巧", "情绪饱满 + 口语化，多放感叹号；「唯一的缺点是」反话句式高频出爆款；带数字更有说服力（价格/箱数/天数/热量）"]], "copy": [["情绪钩子", "谁懂/回忆杀/痛点开场（1句）——「谁懂啊！吃过就忘不掉」「终于懂长辈爱吃红薯的理由了」「好多朋友买玉米踩坑，咱们这款完全不会」"], ["口感三连", "生熟两吃都写全（2-3句）——「生吃脆甜爆汁，蒸熟清甜回甘」「干粉起沙、软糯无丝，自带板栗香」「皮薄肉软，空口吃就巨好吃」"], ["场景/人群翻译", "（1-2句）——「孕妈妈、老人、小宝宝，全家都能放心吃」「管理期姐妹拿来当主食代餐」「剥粒打泥做宝宝辅食」「蒸20分钟，勺子一压就是南瓜泥」"], ["产地信任+售后", "（1-2句，按实际写）——「现摘现发、自然成熟」「带苞叶发货锁水保鲜」「到货24小时坏果全程包赔」"], ["稀缺/价格收尾", "（1句）——「十几块直接带走一大箱」「唯一缺点：一年就吃二个月」「季节一过真的下架，别等」"]], "tags": [["番薯", "红薯 / 番薯 / 紫薯 / 板栗薯 / 榴莲蜜薯 / 烟薯25号 / 蜜薯 / 南沙一点红 / 宝宝辅食 / 代餐粗粮 / 空气炸锅烤红薯 / 粗粮主食 / 早餐 / 优质农产品 / 粗粮血脉觉醒 / 健康粗粮"], ["南瓜", "南瓜 / 贝贝南瓜 / 蛋黄贝贝 / 板栗南瓜 / 金香栗栗 / 减脂期主食 / 孕期吃什么 / 宝宝营养 / 早餐 / 干净饮食 / 轻食 / 烤南瓜 / 一锅蒸"], ["玉米", "玉米 / 糯玉米 / 甜玉米 / 云南金银水果玉米 / 黄糯玉米 / 宝石玉米 / 美玉25号 / 白糯米 / 黑玉米 / 孕妈妈 / 宝宝辅食 / 玉米控 / 早餐 / 代餐 / 粗粮主食"], ["番茄", "西红柿 / 番茄 / 沙瓤番茄 / 沙瓤西红柿 / 老品种西红柿 / 自然熟西红柿 / 铁皮柿子 / 草莓番茄 / 孕妇水果 / 宝宝辅食 / 西红柿爱好者 / 糖拌番茄 / 番茄炒蛋 / 生吃 / 凉拌"]]}}]}, "水果": {"logic": "水果分四类打法：蓝莓/草莓怕「虚装坏果」→ 写成可核对的证据；苹果/柿子/桃拼口感+时令+价格力；柑橘/橙/柚走润燥+整箱囤货；榴莲/牛油果/猕猴桃靠科普+场景破认知门槛。", "groups": [{"name": "蓝莓/草莓", "note": "单价高、易损耗，用户最怕「到手不符、虚装、坏果」。打法：到手状态 → 果实细节 → 实际入口 → 顾虑回应。", "covers": [{"k": "104004dg326cl8n6o440d74d77o", "cap": "精致道具特写图", "bad": false}, {"k": "104004dg326cl8moh5808coc670", "cap": "产地背景图", "bad": false}, {"k": "104004dg326cl8klr4c0560kdkc", "cap": "强视觉色彩冲击", "bad": false}, {"k": "104004dg326cl8nd6kc08scslkg", "cap": "AI虚假", "bad": true}, {"k": "104004dg326cl8l5a440cikmd3k", "cap": "引人不适", "bad": true}, {"k": "104004dg326cl8mmr4408doo914", "cap": "虚拟背景", "bad": true}], "std": {"title": [["到手验货型", "「这箱蓝莓拆开后，果子和包装各占多少？」"], ["风味对比型", "「同样是草莓，这两盒吃起来差在哪？」"], ["价格反转型", "「单盒价格，把这盒浆果算明白」"], ["场景解法型", "「收到一箱草莓，怎么分着吃、怎么保存？」"]], "copy": [["情绪钩子", "从一次真实的购买疑问切入——「看着满满一盒，到手到底有多少？」"], ["卖点清单", "3-5条可核对信息：品种/规格、净重、开箱状态、个人口感、包装方式"], ["食用场景", "直接吃、分给同事、搭配早餐或做简单水果碗；场景服务于果子本身"], ["物流售后", "发货方式、到手状态、坏果如何处理；只写该商品实际提供的承诺"], ["信任收尾", "说明适合哪种口味偏好，也说明不适合谁——「喜欢偏软甜口的可以参考；只接受硬脆口感的先看切面和试吃反馈」"]], "tags": null, "tagsTable": {"cols": ["草莓", "蓝莓"], "rows": [["品类词", "#草莓 #草莓季 #水果 #网购水果", "#蓝莓 #新鲜蓝莓 #云南蓝莓 #水果 #网购水果"], ["品种词", "#红颜草莓 #奶油草莓 #白草莓 #丹东草莓", "#花香蓝莓 #L25 #粉蓝莓 #怡颗莓 #蓝雾蓝莓"], ["人群词", "#孕妇水果 #讨好型水果 #草莓脑袋", "#讨好型水果 #花青素"], ["场景词", "#摘草莓 #一起去摘草莓 #现摘现发 #新鲜采摘", "#新鲜采摘 #现摘现发 #头茬 #空运 #顺丰"], ["话题词", "#草莓季 #抓住草莓季的尾巴呀 #大爱水果季 #小红书爆款水果", "#蓝莓自由 #新鲜蓝莓 #大爱水果季 #小红书爆款水果"]]}}}, {"name": "苹果/柿子/桃", "note": "近14天爆款笔记库（10/1-10/14，曝光UV>10000，苹果/柿子/桃商笔 DGMV Top30）。差异化靠口感表达 + 时令紧迫感 + 价格力，文案80-250字短平快。", "covers": [{"k": "104004dg326cl8pisl80elp4r54", "cap": "果肉质感展示，搭配口感类文案", "bad": false}, {"k": "104004dg326cl8q3s4a04eebc20", "cap": "果肉质感展示，搭配口感类文案", "bad": false}, {"k": "104004dg326cl8sjf4604ablotc", "cap": "果园场景实拍，搭配产地直发/价格力", "bad": false}, {"k": "104004dg326cl8viskc1ie0quhk", "cap": "果园场景实拍，搭配产地直发/价格力", "bad": false}, {"k": "104004dg326cl901j4409pkmm2s", "cap": "设计感包装展示", "bad": false}, {"k": "104004dg326cl81ac580drja7qc", "cap": "设计感包装展示", "bad": false}, {"k": "104004dg326cl82qol80ddr2ssg", "cap": "纯AI图", "bad": true}, {"k": "104004dg326cl85abk4065rr048", "cap": "低清素材+无重点", "bad": true}, {"k": "104004dg326cl82rbk402d4b3qg", "cap": "画面杂乱", "bad": true}], "std": {"title": [["口感推荐", "「不涩的脆柿」「脆甜，比西瓜上头」「不放软，直接咔嚓啃」"], ["时令播报", "「2026秦脆上市啦」「脆柿下架倒计时」「蹲冰糖心的姐妹起来啦」"], ["价格力表达", "「7元一箱比烂地里强」「3块1斤不打蜡」"], ["品种避坑/科普", "「脆柿买对版，别花冤枉钱」「和超市苹果不一样」"], ["热门品类对比", "「代替/取代车厘子在我心中的地位」"], ["通用技巧", "情绪饱满 + 口语化，多放感叹号；带数字（价格/天数/比例/个数）"]], "copy": [["情绪钩子", "感叹/反话/蹭流开场（1句）——「终于熟了！」「谁懂啊」「唯一缺点：」"], ["口感三连", "脆 + 甜 + 多汁必写全（2-3句）——「咔嚓脆响、脆甜无涩、比苹果还解压」"], ["场景/人群翻译", "（1句）——「管理期姐妹放心吃」「追剧切一盘就像吃苹果薯片」「冷藏后口感更爽」"], ["产地信任", "（1-2句，按实际写）——「现摘现发/不打药不催熟/不发一颗绿果/瑕疵果都挑出来」"], ["稀缺收尾", "（1句）——「果期就这一小段，别等」「只卖这一个月，且吃且珍惜」。全文80-250字，短平快"]], "tags": null, "tagsTable": {"cols": ["苹果", "柿子", "桃"], "rows": [["品类词", "#苹果 #新鲜苹果 #水果", "#柿子 #脆柿 #脆柿子", "#桃子 #脆桃 #毛桃"], ["品种词", "#维纳斯苹果 #丑苹果 #秦脆", "#阳丰脆柿 #巧克力脆柿 #富平尖柿 #糖心脆柿", "#青州蜜桃 #金秋红蜜 #冬桃 #青桃"], ["人群词", "#孕妇水果 #讨好型水果", "#孕妇水果 #办公室水果", "#桃子控 #脆桃党 #孕妇水果"], ["场景词", "#应季水果 #新鲜采摘", "#现摘现发 #柿子熟了", "#应季水果 #助农水果"], ["话题词", "#美食学科之神 #小红书爆款水果 #大爱水果季", "#美食学科之神 #小红书爆款水果 #大爱水果季", "#美食学科之神 #小红书爆款水果 #大爱水果季"]]}}}, {"name": "柑橘/橙/柚", "note": "秋冬应季润燥 + 整箱囤货，靠「润/应季/限定」情绪词 + 整箱价格冲击完成转化。", "topics": [{"name": "应季润燥型", "tag": "", "rows": [["标题公式", "建议 +［季节/月份］+ 多吃！+［口感词］+ 感叹"], ["举例", "建议10月多吃！太润了～ / 建议女生十月多吃！泰润啦"], ["封面", "剥开的果肉大特写占满画面，滴汁水珠；顶部大号加粗标题字，角落小字「XX果正当季」"]], "imgs": [{"k": "104004dg326cl87f64a7d1qmntg", "cap": "", "bad": false}]}, {"name": "稀缺限定型", "tag": "", "rows": [["标题公式", "唯一缺点：+［季节限定］+ 倒计时类"], ["举例", "唯一的缺点：一年只能吃一季！ / 今天10号，倒计时20天……"], ["封面", "整箱/整果实物图 + 红色大字「季节限定」；或日历/倒计时数字特写"]], "imgs": [{"k": "104004dg326cl89hskc0c74jt30", "cap": "", "bad": false}]}, {"name": "反差反转型", "tag": "", "rows": [["标题公式", "吃之前xx（贬义），吃之后xx（褒义）！/ 一个［反差点］但［优点］的水果"], ["举例", "吃之前普通柚子，辞水之后直接变仙品 / 一个撑死人但热量低的水果"], ["封面", "左右拼图对比：「吃之前」平平无奇 vs「吃之后」剥开爆汁；或大堆果肉铺满+大字反差句"]], "imgs": [{"k": "104004dg326cl83jrl805l7rlt8", "cap": "", "bad": false}]}, {"name": "低价一箱型", "tag": "", "rows": [["标题公式", "价格数字 + 箱装单位 + 情绪重复！！"], ["举例", "XX一箱！XX一箱！重要的事情说三遍！ / 不要低估8.9的快乐！这么大一箱"], ["封面", "整箱实拍，放大价格数字居中，手拿果子对比箱子大小"]], "imgs": [{"k": "104004dg326cl84adka0b30o64g", "cap": "", "bad": false}, {"k": "104004dg326cl856q4a05febrc0", "cap": "", "bad": false}]}], "extras": [["文案A版", "情绪钩子 → 口感三连 → 场景人群 → 产地信任 → 稀缺收尾（例：谁懂啊！秋天就盼这一口文旦柚！）"], ["文案B版", "疑问切入 → 4条核对卖点（品种/规格/开箱/口感）→ 场景 → 售后（坏果拍照按颗理赔）→ 人群适配（说清不适合谁）"]], "tagsTable": {"cols": ["应季润燥型", "稀缺限定型", "反差反转型", "低价一箱型"], "rows": [["品类精准词", "应季柚子 / 文旦柚 / 冰糖橙 / 爱媛果冻橙 / 涌泉蜜桔 / 哀牢山冰糖橙", "应季柚子 / 文旦柚 / 冰糖橙 / 爱媛果冻橙 / 涌泉蜜桔 / 哀牢山冰糖橙", "柚子 / 蜜柚 / 红心柚 / 应季柚子 / 文旦柚", "柚子整箱 / 橘子整箱 / 水果整箱装 / 产地直发水果"], ["场景人群词", "秋季养生 / 干燥季节 / 办公室水果 / 女生水果 / 全家水果", "囤货党 / 水果爱好者 / 送礼备货 / 全家分享", "XX测评 / 减脂期 / 办公室零食 / 追剧水果 / 打工人水果", "整箱 / 产地直发水果 / 家庭囤货XX / 囤货党 / 学生党 / 打工人 / 办公室拼单 / 家庭采购 / 居家囤货水果"], ["赛道热门话题词", "秋冬吃什么 / 应季水果 / 水果正当季 / 秋冬水果推荐 / 太润了 / 秋季润燥水果", "季节限定 / 错过等一年 / 应季水果 / 限时水果", "讨好型水果 / 邪恶水果 / 真香现场 / 水果测评 / 热量低的水果 / 善良水果 / 报恩水果 / XX正确吃法 / 吃之前吃之后", "水果自由 / 整箱水果 / 便宜水果 / 性价比水果 / 购买力"]]}}, {"name": "榴莲/牛油果/猕猴桃", "note": "品种差异大、催熟/吃法有认知门槛，科普与场景是主力；高价进口品用稀缺+价格。", "covers": [{"k": "104004dg326cl8pbik40nmphia8", "cap": "真人出镜，表情有亲和力，明确展示商品", "bad": false}, {"k": "104004dg326cl8ptr4673clpuf4", "cap": "真人出镜，表情有亲和力，明确展示商品", "bad": false}, {"k": "104004dg326cl8qljkc007o9ukk", "cap": "品质背书/产地+场景打造", "bad": false}, {"k": "104004dg326cl8qvf46054iupco", "cap": "品质背书/产地+场景打造", "bad": false}, {"k": "104004dg326cl8qm94c0fqojebk", "cap": "画面明亮清晰，文字简短，果肉饱满", "bad": false}, {"k": "104004dg326cl8rntk600sfvo38", "cap": "画面明亮清晰，文字简短，果肉饱满", "bad": false}, {"k": "104004dg326cl8rpqk40ae1l01s", "cap": "主播表情狰狞；封面看不出卖什么", "bad": true}, {"k": "104004dg326cl8rip4c071qtsu8", "cap": "主播表情狰狞；封面看不出卖什么", "bad": true}, {"k": "104004dg326cl8sll5805998hf4", "cap": "AI痕迹重，封面字过多", "bad": true}, {"k": "104004dg326cl8sajk60fghhjo8", "cap": "AI痕迹重，封面字过多", "bad": true}, {"k": "104004dg326cl8scql807uaj2fg", "cap": "果肉无光泽、背景杂乱", "bad": true}, {"k": "104004dg326cl8stlkc0d5g2gag", "cap": "果肉无光泽、背景杂乱", "bad": true}], "std": {"title": [["科普", "国产和进口的区别是什么？/ 脆or硬差别 / xx品种大科普 / 如何催熟"], ["场景", "下午犯困来一口 / 承包你的餐后水果 / 轻食吃这个简直绝了 / 冰箱里有这个，下班我都着急 / 带到办公室被追着问"], ["口感", "蜜一样甜 / 软糯冰淇淋口感 / 奶油 / 爆汁 / 脆爽"], ["营销", "紧急通知‼️ / 被时代抛弃的水果 / 对不起，这个价格做不下去了 / 当季最后一口 / 当季第一口 / 听劝！/ 久等了 / 谁懂？"], ["价格", "xx惊爆价！/ xx必囤！/ xx水果能做到这个价格？/ xx福利价！"]], "copy": [["情绪钩子", "谁懂型「谁懂啊，这个xx一口下去我直接沉默了」；反差型「原来xx根本不是我以前吃的那个味道」；时令型「天一冷就想吃点热带水果」"], ["口感", "「甜得很正，不是齁的那种」「软糯绵密，熟透了用勺子挖着吃」「一口爆汁，吃完要擦手」"], ["场景/人群翻译", "「下午犯困来一口，整个人都醒了」「早上切一盘配酸奶，五分钟搞定」「逢年过节送人，收到的都说好吃」"], ["产地信任+售后", "「xx产地直发，不经过中间商」「七八成熟发货，到手放x天就能吃」（按实际写）「泡沫网加独立包装，路上不磕碰」「坏果拍照，按个赔」"], ["稀缺/价格收尾", "「xx元到手x斤，算下来一个才几块钱」「当季就这几个月，季节一过就下架」；劝退型「追求开箱就吃的，这个要放x天，介意的慎拍」"]], "tags": [["品类词", "#热带水果 #进口水果 #国产水果 #xx（品名） #冷冻水果"], ["品种词", "#产地+品名（如 #海南xx #云南xx #泰国xx） #品种名 #红心xx / #冰糖xx"], ["人群词", "#打工人 #上班族 #学生党 #宝妈 #宝宝辅食 #减脂期 #健身党 #吃货 #水果控 #囤货党"], ["场景词", "#办公室零食 #下午茶 #早餐 #轻食 #饭后水果 #追剧零食 #水果捞 #果切摆盘 #送礼 #走亲戚"], ["话题词", "#秋冬水果推荐 #应季水果 #秋天吃什么水果 #当季水果 #水果自由 #宝藏水果 #小众水果 #双11囤货 #双11必买 #年货水果"]]}}]}}, SEARCH={"海鲜水产": "sea", "肉禽蛋": "meat", "蔬菜": "veg", "水果": "fruit"};
+const $=s=>document.querySelector(s);
+const STATE={win:'y25',more:false,cat:null};
+const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function rows(r){return r.map(x=>`<div class="row"><b>${esc(x[0])}</b><span>${esc(x[1])}</span></div>`).join('')}
+function imgs(l){return `<div class="imgs">${l.map(i=>`<figure><img loading="lazy" src="./img/${i.k}.jpg" alt="${esc(i.cap||'封面示例')}">${i.bad?'<span class="bd">反面</span>':(i.cap?'<span class="gd">优秀</span>':'')}${i.cap?`<figcaption>${esc(i.cap)}</figcaption>`:''}</figure>`).join('')}</div>`}
+function ttable(t,sub){return `<div class="card"><h3>话题 <small style="font-weight:400;color:var(--sub);font-size:13px">${sub}</small></h3><div class="tt-wrap"><table class="tt"><thead><tr><th>维度</th>${t.cols.map(c=>`<th>${esc(c)}</th>`).join('')}</tr></thead><tbody>${t.rows.map(r=>`<tr><th>${esc(r[0])}</th>${r.slice(1).map(x=>`<td>${esc(x)}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`}
+function std(s){const lab=w=>`<b style="flex-basis:${w}px">`;
+  const R=(l,w)=>l.map(x=>`<div class="row">${lab(w)}${esc(x[0])}</b><span>${esc(x[1])}</span></div>`).join('');
+  return `<div class="card"><h3>标题 <small style="font-weight:400;color:var(--sub);font-size:13px">类型：标题示意</small></h3>${R(s.title,112)}</div>`+
+  (s.covers?`<div class="card"><h3>封面示例 <small style="font-weight:400;color:var(--sub);font-size:13px">优秀 vs 反面教材</small></h3>${imgs(s.covers)}</div>`:'')+
+  `<div class="card"><h3>文案五步</h3>${s.copy.map((x,i)=>`<div class="row">${lab(112)}${i+1}. ${esc(x[0])}</b><span>${esc(x[1])}</span></div>`).join('')}</div>`+
+  (s.tagsTable?ttable(s.tagsTable,'按产品'):`<div class="card"><h3>话题 <small style="font-weight:400;color:var(--sub);font-size:13px">按产品</small></h3>${R(s.tags,76)}</div>`)}
+function renderCat(cat,gi){
+  const c=TOPICS[cat];gi=gi||0;let h=`<div class="logic"><b>购买逻辑：</b>${esc(c.logic)}</div>`;
+  const multi=c.groups.length>1;
+  if(multi){h+='<div class="subtabs">'+c.groups.map((g,i)=>`<button class="subtab ${i===gi?'on':''}" data-g="${i}">${esc(g.name)}</button>`).join('')+'</div>'}
+  const g=c.groups[gi];
+  if(g.note)h+=`<p class="lead" style="margin-top:-4px">${esc(g.note)}</p>`;
+  if(g.std)h+=std(Object.assign({},g.std,{covers:g.covers}));
+  (g.std?[]:g.topics).forEach((t,i)=>{h+=`<div class="card topic"><h3><span class="n">${i+1}</span>${esc(t.name)}${t.tag?`<i>${esc(t.tag)}</i>`:''}</h3>${rows(t.rows)}${t.imgs?'<div class="row"><b>封面示例</b><span style="flex:1">'+imgs(t.imgs)+'</span></div>':''}</div>`});
+  if(g.covers&&!g.std)h+=`<div class="card"><h3>封面示例 <small style="font-weight:400;color:var(--sub);font-size:13px">优秀 vs 反面教材</small></h3>${imgs(g.covers)}</div>`;
+  const ex=g.std?null:(g.extras||(multi?null:c.extras));
+  if(ex)h+=`<h4 style="margin:6px 0 8px;color:var(--sub)">本类通用打法</h4><div class="extras">${rows(ex)}</div>`;
+  if(g.tagsTable&&!g.std)h+=ttable(g.tagsTable,'按选题方向');
+  $('#cat-body').innerHTML=h;
+  document.querySelectorAll('.subtab').forEach(b=>b.onclick=()=>renderCat(cat,+b.dataset.g));
+}
+function tabs(el,names,cb){el.innerHTML=names.map((n,i)=>`<button class="tab ${i?'':'on'}">${n}</button>`).join('');
+  [...el.children].forEach((b,i)=>b.onclick=()=>{[...el.children].forEach(x=>x.classList.remove('on'));b.classList.add('on');cb(names[i])});cb(names[0])}
+tabs($('#cat-tabs'),Object.keys(TOPICS),n=>renderCat(n,0));
+function renderS(){
+  $('#s-img').src='./img/hot-'+SEARCH[STATE.cat]+'-'+STATE.win+'.jpg';
+  $('#s-win').innerHTML=[['y25','2025.10.10–11.11（去年双十一，33天）'],['y26','2026.9.10–10.10（近一个月，31天）']].map(([k,l])=>`<button class="${STATE.win===k?'on':''}" data-w="${k}">${l}</button>`).join('');
+  document.querySelectorAll('#s-win button').forEach(b=>b.onclick=()=>{STATE.win=b.dataset.w;renderS()})}
+tabs($('#s-tabs'),Object.keys(SEARCH),n=>{STATE.cat=n;renderS()});
+const lb=document.createElement('div');lb.className='lb';lb.innerHTML='<img>';document.body.appendChild(lb);
+lb.onclick=()=>lb.style.display='none';
+document.addEventListener('click',e=>{if(e.target.matches('.imgs img, .imgs.hot img')){lb.firstChild.src=e.target.src;lb.style.display='flex'}});
+const links=[...document.querySelectorAll('nav a')],secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+addEventListener('scroll',()=>{let k=0;secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<120)k=i});links.forEach((a,i)=>a.classList.toggle('on',i===k))});
+</script></body></html>
